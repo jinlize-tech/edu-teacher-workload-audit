@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.jinlize.tech/education/JLZ-EDU-SK-094/input.schema.json",
+  "title": "教师工作量与排班负荷审计输入契约",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contract_version",
+    "data_status",
+    "contains_sensitive_data",
+    "teachers",
+    "schedule_entries",
+    "task_time_standards",
+    "rest_rules",
+    "role_scope",
+    "audit_period"
+  ],
+  "properties": {
+    "contract_version": {
+      "const": "1.2.0"
+    },
+    "data_status": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "partially_confirmed",
+        "unconfirmed"
+      ],
+      "description": "输入资料的确认状态"
+    },
+    "contains_sensitive_data": {
+      "type": "boolean"
+    },
+    "requested_output_language": {
+      "type": "string",
+      "enum": [
+        "zh-CN",
+        "en"
+      ],
+      "default": "zh-CN"
+    },
+    "teachers": {
+      "title": "教师清单",
+      "description": "编号和岗位，不填真实姓名",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "schedule_entries": {
+      "title": "课表与任务",
+      "description": "授课、备课、反馈、沟通、行政和通勤",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "task_time_standards": {
+      "title": "任务工时标准",
+      "description": "每类任务的标准工时",
+      "type": "object"
+    },
+    "commute_data": {
+      "title": "跨校区与通勤",
+      "description": "校区切换和路程时间",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": true
+      }
+    },
+    "rest_rules": {
+      "title": "恢复窗口与限制",
+      "description": "连续授课、休息和排班规则",
+      "type": "string",
+      "minLength": 1
+    },
+    "role_scope": {
+      "title": "岗位范围",
+      "description": "教师、教研或管理兼任",
+      "type": "string",
+      "minLength": 1
+    },
+    "audit_period": {
+      "title": "审计周期",
+      "description": "周、月或排班周期",
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

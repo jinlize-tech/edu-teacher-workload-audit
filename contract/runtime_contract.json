@@ -1,0 +1,97 @@
+{
+  "contract_version": "1.2.0",
+  "product_id": "JLZ-EDU-SK-094",
+  "product_name": "教师工作量与排班负荷审计",
+  "product_type": "Skill",
+  "repository_name": "edu-teacher-workload-audit",
+  "repository_url": "https://github.com/jinlize-tech/edu-teacher-workload-audit",
+  "product_version": "1.0.0",
+  "batch": 4,
+  "business_category": "13 组织与人才效能中心",
+  "high_risk": false,
+  "deterministic": true,
+  "agent": false,
+  "core_outputs": [
+    "工作负荷表",
+    "热区",
+    "调整方案"
+  ],
+  "optional_outputs": [
+    "连续授课",
+    "通勤风险",
+    "团队差异",
+    "复核指标"
+  ],
+  "all_outputs": [
+    "工作负荷表",
+    "热区",
+    "调整方案",
+    "连续授课",
+    "通勤风险",
+    "团队差异",
+    "复核指标"
+  ],
+  "human_review_required": false,
+  "reviewer_role": "业务负责人",
+  "commercial_boundary": null,
+  "input_required": [
+    "contract_version",
+    "data_status",
+    "contains_sensitive_data",
+    "teachers",
+    "schedule_entries",
+    "task_time_standards",
+    "rest_rules",
+    "role_scope",
+    "audit_period"
+  ],
+  "input_properties": {
+    "contract_version": {
+      "type": "string"
+    },
+    "data_status": {
+      "type": "string",
+      "enum": [
+        "confirmed",
+        "partially_confirmed",
+        "unconfirmed"
+      ]
+    },
+    "contains_sensitive_data": {
+      "type": "boolean"
+    },
+    "requested_output_language": {
+      "type": "string",
+      "enum": [
+        "zh-CN",
+        "en"
+      ],
+      "default": "zh-CN"
+    },
+    "teachers": {
+      "type": "array"
+    },
+    "schedule_entries": {
+      "type": "array"
+    },
+    "task_time_standards": {
+      "type": "object"
+    },
+    "commute_data": {
+      "type": "array"
+    },
+    "rest_rules": {
+      "type": "string"
+    },
+    "role_scope": {
+      "type": "string"
+    },
+    "audit_period": {
+      "type": "string"
+    }
+  },
+  "expected_scenario_count": 13,
+  "license": "Apache-2.0",
+  "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED"
+}

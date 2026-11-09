@@ -1,0 +1,19 @@
+{
+  "contract_version": "1.2.0",
+  "data_status": "confirmed",
+  "contains_sensitive_data": false,
+  "requested_output_language": "zh-CN",
+  "teachers": [
+    {}
+  ],
+  "schedule_entries": [
+    {}
+  ],
+  "task_time_standards": {},
+  "commute_data": [
+    {}
+  ],
+  "rest_rules": "恢复窗口与限制已核对（脱敏示例）",
+  "role_scope": "岗位范围已核对（脱敏示例）",
+  "audit_period": "审计周期已核对（脱敏示例）"
+}

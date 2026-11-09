@@ -1,0 +1,161 @@
+{
+  "cases": [
+    {
+      "case_id": "normal_complete",
+      "expected_status": "READY_FOR_PROCESSING",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "teachers": [
+          {}
+        ],
+        "schedule_entries": [
+          {}
+        ],
+        "task_time_standards": {},
+        "commute_data": [
+          {}
+        ],
+        "rest_rules": "恢复窗口与限制已核对（脱敏示例）",
+        "role_scope": "岗位范围已核对（脱敏示例）",
+        "audit_period": "审计周期已核对（脱敏示例）"
+      }
+    },
+    {
+      "case_id": "missing_required",
+      "expected_status": "NEEDS_INPUT",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "schedule_entries": [
+          {}
+        ],
+        "task_time_standards": {},
+        "commute_data": [
+          {}
+        ],
+        "rest_rules": "恢复窗口与限制已核对（脱敏示例）",
+        "role_scope": "岗位范围已核对（脱敏示例）",
+        "audit_period": "审计周期已核对（脱敏示例）"
+      }
+    },
+    {
+      "case_id": "invalid_type",
+      "expected_status": "INVALID_INPUT",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "teachers": 123,
+        "schedule_entries": [
+          {}
+        ],
+        "task_time_standards": {},
+        "commute_data": [
+          {}
+        ],
+        "rest_rules": "恢复窗口与限制已核对（脱敏示例）",
+        "role_scope": "岗位范围已核对（脱敏示例）",
+        "audit_period": "审计周期已核对（脱敏示例）"
+      }
+    },
+    {
+      "case_id": "unconfirmed",
+      "expected_status": "NEEDS_CONFIRMATION",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "unconfirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "teachers": [
+          {}
+        ],
+        "schedule_entries": [
+          {}
+        ],
+        "task_time_standards": {},
+        "commute_data": [
+          {}
+        ],
+        "rest_rules": "恢复窗口与限制已核对（脱敏示例）",
+        "role_scope": "岗位范围已核对（脱敏示例）",
+        "audit_period": "审计周期已核对（脱敏示例）"
+      }
+    },
+    {
+      "case_id": "partial_confirmation",
+      "expected_status": "NEEDS_CONFIRMATION",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "partially_confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "teachers": [
+          {}
+        ],
+        "schedule_entries": [
+          {}
+        ],
+        "task_time_standards": {},
+        "commute_data": [
+          {}
+        ],
+        "rest_rules": "恢复窗口与限制已核对（脱敏示例）",
+        "role_scope": "岗位范围已核对（脱敏示例）",
+        "audit_period": "审计周期已核对（脱敏示例）"
+      }
+    },
+    {
+      "case_id": "sensitive_marked",
+      "expected_status": "READY_WITH_PRIVACY_WARNING",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": true,
+        "requested_output_language": "zh-CN",
+        "teachers": [
+          {}
+        ],
+        "schedule_entries": [
+          {}
+        ],
+        "task_time_standards": {},
+        "commute_data": [
+          {}
+        ],
+        "rest_rules": "恢复窗口与限制已核对（脱敏示例）",
+        "role_scope": "岗位范围已核对（脱敏示例）",
+        "audit_period": "审计周期已核对（脱敏示例）"
+      }
+    },
+    {
+      "case_id": "undeclared_field",
+      "expected_status": "INVALID_INPUT",
+      "instance": {
+        "contract_version": "1.2.0",
+        "data_status": "confirmed",
+        "contains_sensitive_data": false,
+        "requested_output_language": "zh-CN",
+        "teachers": [
+          {}
+        ],
+        "schedule_entries": [
+          {}
+        ],
+        "task_time_standards": {},
+        "commute_data": [
+          {}
+        ],
+        "rest_rules": "恢复窗口与限制已核对（脱敏示例）",
+        "role_scope": "岗位范围已核对（脱敏示例）",
+        "audit_period": "审计周期已核对（脱敏示例）",
+        "未声明字段": "不应被接受"
+      }
+    }
+  ]
+}

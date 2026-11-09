@@ -1,0 +1,32 @@
+{
+  "number": 94,
+  "product_id": "JLZ-EDU-SK-094",
+  "candidate_id": "CAND-039",
+  "chinese_name": "教师工作量与排班负荷审计",
+  "english_name": "Teacher Workload and Scheduling Audit",
+  "repository_name": "edu-teacher-workload-audit",
+  "repository_url": "https://github.com/jinlize-tech/edu-teacher-workload-audit",
+  "product_type": "Skill",
+  "category": "13 组织与人才效能中心",
+  "batch": 4,
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "core_outputs": [
+    "工作负荷表",
+    "热区",
+    "调整方案"
+  ],
+  "optional_outputs": [
+    "连续授课",
+    "通勤风险",
+    "团队差异",
+    "复核指标"
+  ],
+  "high_risk": false,
+  "deterministic": true,
+  "scenario_count": 13,
+  "package_path": "dist/edu-teacher-workload-audit-v1.0.0.zip",
+  "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED",
+  "status": "LOCAL_DEVELOPMENT_COMPLETE_PENDING_REMOTE_VERIFICATION"
+}
