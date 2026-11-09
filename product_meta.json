@@ -9,7 +9,7 @@
   "product_type": "Skill",
   "category": "13 组织与人才效能中心",
   "batch": 4,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "Apache-2.0",
   "core_outputs": [
     "工作负荷表",
@@ -25,8 +25,13 @@
   "high_risk": false,
   "deterministic": true,
   "scenario_count": 13,
-  "package_path": "dist/edu-teacher-workload-audit-v1.0.0.zip",
+  "package_path": "dist/edu-teacher-workload-audit-v1.0.1.zip",
   "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
   "workbuddy_validation": "NOT_EXECUTED",
-  "status": "LOCAL_DEVELOPMENT_COMPLETE_PENDING_REMOTE_VERIFICATION"
+  "status": "DOCUMENTATION_AND_METADATA_PATCH_1.0.1_BUILT_PENDING_REMOTE_VERIFICATION",
+  "previous_version": "1.0.0",
+  "previous_package_path": "dist/edu-teacher-workload-audit-v1.0.0.zip",
+  "previous_package_sha256": "26FE81C8C2D50126A2FB30551C24D01255B01384DDD772B9E69790B86DAE70E3",
+  "package_state": "PATCH_PACKAGE_V1.0.1_BUILT",
+  "readme_repair": "README_USAGE_INSTALLATION_ALIGNED_WITH_PACKAGE_CONTENTS"
 }

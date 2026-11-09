@@ -2,10 +2,10 @@
   "product_id": "JLZ-EDU-SK-094",
   "repository_name": "edu-teacher-workload-audit",
   "product_type": "Skill",
-  "version": "1.0.0",
-  "package_path": "dist/edu-teacher-workload-audit-v1.0.0.zip",
-  "sha256": "26FE81C8C2D50126A2FB30551C24D01255B01384DDD772B9E69790B86DAE70E3",
-  "bytes": 41045,
+  "version": "1.0.1",
+  "package_path": "dist/edu-teacher-workload-audit-v1.0.1.zip",
+  "sha256": "C861811A2DABC4797146DBA6EDD57818C11B34347CE2CE9116AA6303D952EB39",
+  "bytes": 42075,
   "entries": [
     "edu-teacher-workload-audit/README.md",
     "edu-teacher-workload-audit/PRODUCT_SPEC.md",
@@ -36,5 +36,9 @@
   "license": "Apache-2.0",
   "runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
   "workbuddy_validation": "NOT_EXECUTED",
-  "built_at": "2026-11-09T00:00:00+08:00"
+  "built_at": "2026-11-09T12:07:44.929565+00:00",
+  "previous_version": "1.0.0",
+  "previous_package_path": "dist/edu-teacher-workload-audit-v1.0.0.zip",
+  "previous_package_sha256": "26FE81C8C2D50126A2FB30551C24D01255B01384DDD772B9E69790B86DAE70E3",
+  "patch_reason": "README_USAGE_INSTALLATION_AND_PLATFORM_METADATA_FINALIZATION"
 }
