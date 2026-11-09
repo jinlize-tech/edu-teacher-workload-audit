@@ -1,0 +1,17 @@
+{
+  "product_id": "JLZ-EDU-SK-094",
+  "repository_name": "edu-teacher-workload-audit",
+  "version": "1.0.1",
+  "tested_source_commit": "804b2958fc65824ca214f7a12751db5cafb565dc",
+  "tested_source_tree_sha": "8aeb3ba42c08ff737a9555e839f3851e66872d65",
+  "package_path": "dist/edu-teacher-workload-audit-v1.0.1.zip",
+  "package_sha256": "C861811A2DABC4797146DBA6EDD57818C11B34347CE2CE9116AA6303D952EB39",
+  "runtime_test_status": "LOCAL_TEST_PASS",
+  "runtime_test_count": 55,
+  "schema_validation_status": "SCHEMA_INSTANCE_VALIDATION_PASS",
+  "schema_validation_case_count": 16,
+  "model_runtime_status": "MODEL_RUNTIME_NOT_VERIFIED",
+  "workbuddy_validation": "NOT_EXECUTED",
+  "readme_repair": "PASS",
+  "plugin_author_name": null
+}
